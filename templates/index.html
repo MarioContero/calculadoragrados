@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <form method="POST">
+        <label for="celsius">Grados Celsius:</label>
+        <input type="text" id="celsius" name="celsius">
+        <button type="submit">Convertir</button>
+    </form>
+    {% if error_message %}
+    <p>{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
